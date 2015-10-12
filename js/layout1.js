@@ -13,7 +13,7 @@ var activeCount = 0;
 var androidversion;
 var bannerAdUnit = 'ca-app-pub-1333731159795332/4834563999';
 var interstitialAdUnit = 'ca-app-pub-1333731159795332/6311297196';
-var isOverlap = true;
+var isOverlap = false;
 var isTest = false;
 // Change 14 to 15
 for (var i = 0; i < 14; i++) {
