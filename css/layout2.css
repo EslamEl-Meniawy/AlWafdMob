@@ -53,6 +53,14 @@ a {
 	z-index: 2;
 	-webkit-backface-visibility: hidden;
 }
+.ad {
+	height: 100px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 2;
+	-webkit-backface-visibility: hidden;
+}
 .logo {
 	float: right;
 	background: url(../img/logo.jpg) no-repeat;

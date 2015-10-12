@@ -240,6 +240,13 @@ function loadAD() {
 			$('.page-inner').each(function() {
 				$(this).css('padding-bottom', '100px');;
 			});
+			$('.scroll-container').each(function(){
+				$(this).swiper({
+					mode:'vertical',
+					scrollContainer: true,
+					mousewheelControl: true
+				});
+			});
 	        window.admob.showBannerAd('bottom-center', 'SMART_BANNER');
 	    };
 	    window.admob.preloadBannerAd();
