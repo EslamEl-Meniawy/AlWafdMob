@@ -227,24 +227,15 @@ function loadAD() {
 			dataType : 'JSON'
 		}).done(function(response) {
 			if (response.ad == true) {
-				window.admob.setUp(adUnit, adUnitFullScreen, isOverlap, isTest);
-	    		window.admob.preloadBannerAd();
+				admob.initAdmob('ca-app-pub-1333731159795332/4834563999', 'ca-app-pub-1333731159795332/6311297196');
+		        var admobParam = new  admob.Params();
+		        admobParam.isTesting = false;
+		        admob.showBanner(admob.BannerSize.SMART_BANNER, admob.Position.TOP_APP, admobParam);
 			}
 		});*/
-		/*window.admob.setUp(bannerAdUnit, interstitialAdUnit, isOverlap, isTest);
-		window.admob.onBannerAdPreloaded = function() {
-	        window.admob.showBannerAd('top-center', 'SMART_BANNER');
-	    };
-	    window.admob.preloadBannerAd();
-	    window.onbeforeunload = function() {
-            window.admob.hideBannerAd();
-        };*/
         admob.initAdmob('ca-app-pub-1333731159795332/4834563999', 'ca-app-pub-1333731159795332/6311297196');
         var admobParam = new  admob.Params();
         admobParam.isTesting = false;
         admob.showBanner(admob.BannerSize.SMART_BANNER, admob.Position.TOP_APP, admobParam);
-        /*window.onbeforeunload = function() {
-            admob.hideBanner();
-        };*/
 	}
 }
