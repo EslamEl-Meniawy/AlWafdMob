@@ -60,6 +60,7 @@ a {
 	bottom: 0;
 	z-index: 2;
 	-webkit-backface-visibility: hidden;
+	display: none;
 }
 .logo {
 	float: right;

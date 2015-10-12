@@ -53,6 +53,11 @@ a {
 	width: 100%;
 	background: #ddd;
 }
+.ad {
+	height: 100px;
+	width: 100%;
+	display: none;
+}
 .logo {
 	float: right;
 	background: url(../img/logo.jpg) no-repeat;

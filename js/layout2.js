@@ -219,7 +219,7 @@ function loadAD() {
 		});*/
 		window.admob.setUp(bannerAdUnit, interstitialAdUnit, isOverlap, isTest);
 		window.admob.onBannerAdPreloaded = function() {
-			$('#content').css('padding-bottom', '100px');
+			$('.ad').show();
 	        window.admob.showBannerAd('bottom-center', 'SMART_BANNER');
 	    };
 	    window.admob.preloadBannerAd();

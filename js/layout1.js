@@ -237,15 +237,9 @@ function loadAD() {
 		});*/
 		window.admob.setUp(bannerAdUnit, interstitialAdUnit, isOverlap, isTest);
 		window.admob.onBannerAdPreloaded = function() {
-			$('.page-inner').each(function() {
-				$(this).css('padding-bottom', '100px');;
-			});
-			$('.scroll-container').each(function(){
-				$(this).swiper({
-					mode:'vertical',
-					scrollContainer: true,
-					mousewheelControl: true
-				});
+			$('.ad').show();
+			$('.swiper-pages').css({
+				height: $(window).height()-$('.head').height()-$('.sectitle').height()-$('.ad').height()
 			});
 	        window.admob.showBannerAd('bottom-center', 'SMART_BANNER');
 	    };
